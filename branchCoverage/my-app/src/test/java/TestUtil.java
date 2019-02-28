@@ -30,4 +30,10 @@ public class TestUtil {
     int[]arr = {0 , 0 , 0 , 0 , 0 };
     u.compute(arr);
   }
+  @Test
+  public void testSumDivisibleFalse() throws Exception {
+    Util u = new Util();
+    int[]arr = {4 , 8 , 5 , 5 , 5};
+    assertFalse(u.compute(arr));
+  }
 }
