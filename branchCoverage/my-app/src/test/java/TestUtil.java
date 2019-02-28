@@ -19,4 +19,9 @@ public class TestUtil {
     Util u = new Util();
     assertFalse(u.compute(new int[1]));
   }
+  @Test
+  public void testComputeLengthDivisibleTwo() {
+    Util u = new Util();
+    assertFalse(u.compute(new int[2]));
+  }
 }
