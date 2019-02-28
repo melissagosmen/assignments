@@ -13,4 +13,10 @@ public class TestUtil {
 
   @Test
   public void example() { assertTrue(true); }
+
+  @Test
+  public void testComputeLengthOne() {
+    Util u = new Util();
+    assertFalse(u.compute(new int[1]));
+  }
 }
