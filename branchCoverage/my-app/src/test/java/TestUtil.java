@@ -24,4 +24,10 @@ public class TestUtil {
     Util u = new Util();
     assertFalse(u.compute(new int[2]));
   }
+  @Test (expected = RuntimeException.class)
+  public void testRunTime() throws Exception {
+    Util u = new Util();
+    int[]arr = {0 , 0 , 0 , 0 , 0 };
+    u.compute(arr);
+  }
 }
